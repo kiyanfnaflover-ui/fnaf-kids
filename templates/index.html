@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF Kids</title>
+    <link rel="icon" href="{{ url_for('static', filename='assets/favicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div id="loader">
+        <img src="https://static.wikia.nocookie.net/c7724b4b-89c3-4c3d-92f0-3f648817b9c5" alt="Loading Assets...">
+        <h2>SYSTEM BOOTING... STAND BY</h2>
+    </div>
+
+    <header class="glass-panel">
+        <div class="logo-area">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="FNAF Kids" class="web-logo">
+            <h1>FNAF Kids</h1>
+        </div>
+        <nav>
+            <a href="#comics">Comics</a>
+            <a href="#gallery">Gallery Edits</a>
+            <a href="#links">Transmissions</a>
+            <a href="/admin" class="admin-link">Security Cam (Admin)</a>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section id="comics" class="glass-panel">
+            <h2>📚 Fazbear Comic Files</h2>
+            <div id="comic-list" class="comic-container">
+                </div>
+        </section>
+
+        <section id="gallery" class="glass-panel">
+            <h2>🎬 Security Tapes & Edits</h2>
+            <div id="gallery-grid" class="gallery-layout">
+                </div>
+        </section>
+
+        <section id="links" class="glass-panel">
+            <h2>🔗 Intercepted Network Links</h2>
+            <ul id="links-list" class="links-layout">
+                </ul>
+        </section>
+    </main>
+
+    <footer class="glass-panel">
+        <p>Created by Kiyan FNAF</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
